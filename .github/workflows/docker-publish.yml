@@ -30,3 +30,7 @@ jobs:
         file: ./node-app/Dockerfile
         push: true
         tags: ghcr.io/${{ github.repository }}:1.0
+        labels: |
+          org.opencontainers.image.source=https://github.com/testwl12/actionstest
+          org.opencontainers.image.description="My container image 2"
+          org.opencontainers.image.licenses=MIT
