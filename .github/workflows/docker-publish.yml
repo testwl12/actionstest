@@ -33,4 +33,5 @@ jobs:
         labels: |
           org.opencontainers.image.source=https://github.com/testwl12/actionstest
           org.opencontainers.image.description="My container image 2"
+          description="Another description"
           org.opencontainers.image.licenses=MIT
