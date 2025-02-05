@@ -7,9 +7,8 @@ on:
   workflow_dispatch:
     inputs:
       custom_tag:
-        description: 'Tag for manual builds'
+        description: 'Tag for manual build. If this field is empty, the latest Release tag will be used'
         required: false
-        default: 'manual-build'
 
 jobs:
   build:
