@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - feature/docker-containers
+  workflow_dispatch:
+    inputs:
+      custom_tag:
+        description: 'Tag for manual builds'
+        required: false
+        default: 'manual-build'
 
 jobs:
   build:
